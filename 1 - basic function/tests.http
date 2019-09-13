@@ -1,0 +1,7 @@
+## Invoke BasicFunction
+POST https://ey.azurewebsites.net/api/BasicFuntion HTTP/1.1
+content-type: application/json
+
+{
+    "name": "John"
+}

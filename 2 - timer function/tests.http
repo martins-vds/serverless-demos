@@ -1,0 +1,9 @@
+## Invoke time function
+
+POST https://ey2.azurewebsites.net/admin/functions/TimerTrigger1 HTTP/1.1
+x-functions-key: yaulwtjKjAaZlEa/RtDlESxg1o3HVNwXoTAnBfIYt/ZNuNhIWaqxfg==
+Content-Type: "application/json"
+
+{
+    
+}
