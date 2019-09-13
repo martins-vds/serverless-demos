@@ -1,8 +1,8 @@
 {
-    "IsEncrypted": false,
+  "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ey8548;AccountKey=uy+jE2trjQWrMHufGQTZT3XU/yj47jzDlHXLtK3qRNSYXP+hOVdQXaejyG8Y4BRRCxtX0wG8KmHMJ6aS/5/w9A==;BlobEndpoint=https://ey8548.blob.core.windows.net/;TableEndpoint=https://ey8548.table.core.windows.net/;QueueEndpoint=https://ey8548.queue.core.windows.net/;FileEndpoint=https://ey8548.file.core.windows.net/",
     "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=ey8548;AccountKey=uy+jE2trjQWrMHufGQTZT3XU/yj47jzDlHXLtK3qRNSYXP+hOVdQXaejyG8Y4BRRCxtX0wG8KmHMJ6aS/5/w9A==;BlobEndpoint=https://ey8548.blob.core.windows.net/;TableEndpoint=https://ey8548.table.core.windows.net/;QueueEndpoint=https://ey8548.queue.core.windows.net/;FileEndpoint=https://ey8548.file.core.windows.net/",
-    "BlobStorageAccountConfiguration": "DefaultEndpointsProtocol=https;AccountName=eymedia;AccountKey=tG7zZR75Bda08xEzQvyzZP7tHr+8UXuhPRu/du/C/qNSZycVWHUBc3P8V2ex6ERWa1kPdmHD71uy5q5ehV8N6A==;EndpointSuffix=core.windows.net"
+    "BlobStorageAccountConfiguration": "DefaultEndpointsProtocol=https;AccountName=serveless;AccountKey=h3ZNkmcVeiRjOHCGo2Dg5678g7CS342EfRa34lqZJOwtkMlEYMGAL7N52X5rMspzzk7ml5H3XUwAL+m9k6hQUw==;EndpointSuffix=core.windows.net"
   }
 }

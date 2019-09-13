@@ -16,7 +16,7 @@ namespace ReviewEvaluationFunctionApp
     {
         public override Task ProcessHttpRequestAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
-            request.Headers.Add("Ocp-Apim-Subscription-Key", "209b41ab6e344042bda931427ed3f7a2");
+            request.Headers.Add("Ocp-Apim-Subscription-Key", "99a8d4246ac14177833a4c9343804ad9");
             return base.ProcessHttpRequestAsync(request, cancellationToken);
         }
     }
@@ -25,13 +25,13 @@ namespace ReviewEvaluationFunctionApp
     {
         [FunctionName("ReviewEvaluationFunction")]
         public static async Task Run([CosmosDBTrigger(
-            databaseName: "EY",
+            databaseName: "Serveless",
             collectionName: "Reviews",
             ConnectionStringSetting = "CosmosDbConnectionString",
             LeaseCollectionName = "leases",
             CreateLeaseCollectionIfNotExists = true)]IReadOnlyList<Document> documents,
 
-            [CosmosDB(databaseName: "EY",
+            [CosmosDB(databaseName: "Serveless",
                 collectionName: "Reviews",
                 ConnectionStringSetting = "CosmosDbConnectionString",
                 CreateIfNotExists = false)]IAsyncCollector<dynamic> results,
@@ -46,7 +46,7 @@ namespace ReviewEvaluationFunctionApp
 
                 ITextAnalyticsClient client = new TextAnalyticsClient(new ApiKeyServiceClientCredentials())
                 {
-                    Endpoint = "https://westcentralus.api.cognitive.microsoft.com"
+                    Endpoint = "https://eastus.api.cognitive.microsoft.com"
                 };
 
                 string languageToAnalyze = "en";
@@ -56,11 +56,11 @@ namespace ReviewEvaluationFunctionApp
                     if (!string.IsNullOrEmpty(document.GetPropertyValue<string>("Satisfaction")))
                         continue;
                     var content = document.GetPropertyValue<string>("Content");
-                    SentimentBatchResult result = await client.SentimentAsync(multiLanguageBatchInput:
+                    SentimentBatchResult result = await client.SentimentBatchAsync(multiLanguageBatchInput:
                         new MultiLanguageBatchInput(
                             new List<MultiLanguageInput>
                             {
-                                new MultiLanguageInput(languageToAnalyze, id: cnt.ToString(), text: content)
+                                new MultiLanguageInput(id: cnt.ToString(), text: content, languageToAnalyze)
                             }
                         )
                     );

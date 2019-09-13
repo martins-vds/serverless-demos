@@ -2,7 +2,7 @@
     "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ey8548;AccountKey=uy+jE2trjQWrMHufGQTZT3XU/yj47jzDlHXLtK3qRNSYXP+hOVdQXaejyG8Y4BRRCxtX0wG8KmHMJ6aS/5/w9A==;BlobEndpoint=https://ey8548.blob.core.windows.net/;TableEndpoint=https://ey8548.table.core.windows.net/;QueueEndpoint=https://ey8548.queue.core.windows.net/;FileEndpoint=https://ey8548.file.core.windows.net/",
-    "CosmosDbConnectionString": "AccountEndpoint=https://eycosdb.documents.azure.com:443/;AccountKey=K7XaHM9WU6c38zIzMhRrO3W4bV5R4bu2TGNzNeNoq27hhOk3qGN8HAjlH5Rso0Bn0ffhaZb2J39m1U9wSz0BTg==;",
+    "CosmosDbConnectionString": "AccountEndpoint=https://servelesscosmos.documents.azure.com:443/;AccountKey=3PhYIvUErkZYlruoB8bP4njpFf7Uxuv1KRTP9PezPByepq4mi3haNZq0gtaSHbmAVMcgsXCPhPVaEbslSeEmBg==;",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet"
   }
 }
