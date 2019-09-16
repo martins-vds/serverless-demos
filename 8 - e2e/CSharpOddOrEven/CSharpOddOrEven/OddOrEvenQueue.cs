@@ -10,7 +10,7 @@ namespace CSharpOddOrEven
     public static class OddOrEvenQueue
     {
         public static HttpClient client = new HttpClient();
-		private static string apiEndpoint = "endpoint";
+		private static string apiEndpoint = "https://bogus.com/api";
 
         [FunctionName("OddOrEvenQueue")]
         public static async Task RunAsync(
