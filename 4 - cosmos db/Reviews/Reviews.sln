@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReviewWebsite", "ReviewWebsite\ReviewWebsite.csproj", "{0667D5AD-7A33-4B22-BAD3-D920D1719C86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReviewEvaluationFunctionApp", "ReviewEvaluationFunctionApp\ReviewEvaluationFunctionApp.csproj", "{2EA8FE45-589E-4B68-83B2-62CBB08D01CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0667D5AD-7A33-4B22-BAD3-D920D1719C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0667D5AD-7A33-4B22-BAD3-D920D1719C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0667D5AD-7A33-4B22-BAD3-D920D1719C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0667D5AD-7A33-4B22-BAD3-D920D1719C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA8FE45-589E-4B68-83B2-62CBB08D01CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA8FE45-589E-4B68-83B2-62CBB08D01CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA8FE45-589E-4B68-83B2-62CBB08D01CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA8FE45-589E-4B68-83B2-62CBB08D01CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7290E286-7A63-4193-A079-BECC65387ADE}
+	EndGlobalSection
+EndGlobal
