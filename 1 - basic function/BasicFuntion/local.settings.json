@@ -1,7 +1,7 @@
 {
-    "IsEncrypted": false,
-    "Values": {
-        "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ey8548;AccountKey=uy+jE2trjQWrMHufGQTZT3XU/yj47jzDlHXLtK3qRNSYXP+hOVdQXaejyG8Y4BRRCxtX0wG8KmHMJ6aS/5/w9A==;BlobEndpoint=https://ey8548.blob.core.windows.net/;TableEndpoint=https://ey8548.table.core.windows.net/;QueueEndpoint=https://ey8548.queue.core.windows.net/;FileEndpoint=https://ey8548.file.core.windows.net/",
-        "FUNCTIONS_WORKER_RUNTIME": "dotnet"
-    }
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=storageaccountrgtmpae36;AccountKey=423SDRIatjGSeWf/rRW9zA4S1bbAiH3sX7sYPiRAknyfIC0PXjx7eU8w29HjwG/0zB29FWR3hFH8Bl/whmDw3w==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+  }
 }
