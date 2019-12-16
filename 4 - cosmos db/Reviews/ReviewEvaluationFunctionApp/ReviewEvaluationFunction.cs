@@ -16,7 +16,7 @@ namespace ReviewEvaluationFunctionApp
     {
         public override Task ProcessHttpRequestAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
-            request.Headers.Add("Ocp-Apim-Subscription-Key", "99a8d4246ac14177833a4c9343804ad9");
+            request.Headers.Add("Ocp-Apim-Subscription-Key", "9cb54d36a67b4f6e9963284611c474d9");
             return base.ProcessHttpRequestAsync(request, cancellationToken);
         }
     }
@@ -25,13 +25,13 @@ namespace ReviewEvaluationFunctionApp
     {
         [FunctionName("ReviewEvaluationFunction")]
         public static async Task Run([CosmosDBTrigger(
-            databaseName: "Serveless",
+            databaseName: "Serverless",
             collectionName: "Reviews",
             ConnectionStringSetting = "CosmosDbConnectionString",
             LeaseCollectionName = "leases",
             CreateLeaseCollectionIfNotExists = true)]IReadOnlyList<Document> documents,
 
-            [CosmosDB(databaseName: "Serveless",
+            [CosmosDB(databaseName: "Serverless",
                 collectionName: "Reviews",
                 ConnectionStringSetting = "CosmosDbConnectionString",
                 CreateIfNotExists = false)]IAsyncCollector<dynamic> results,
@@ -46,7 +46,7 @@ namespace ReviewEvaluationFunctionApp
 
                 ITextAnalyticsClient client = new TextAnalyticsClient(new ApiKeyServiceClientCredentials())
                 {
-                    Endpoint = "https://eastus.api.cognitive.microsoft.com"
+                    Endpoint = "https://serverlessanalytics.cognitiveservices.azure.com/"
                 };
 
                 string languageToAnalyze = "en";

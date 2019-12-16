@@ -38,7 +38,7 @@ namespace CSharpOddOrEven.Tests
         [Theory]
         [MemberData(nameof(Numbers.EvenNumbers), MemberType = typeof(Numbers))]
         public async Task EvenNumberAsync(BigInteger number)
-        {
+        {   
             FunctionTestLogger logger = new FunctionTestLogger(output);
 
             await OddOrEvenQueue.RunAsync(number.ToString(), logger);

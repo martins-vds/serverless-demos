@@ -1,8 +1,14 @@
-# Base the image on the built-in Azure Functions Linux image.
-FROM microsoft/azure-functions-runtime:2.0.0-jessie
-ENV AzureWebJobsScriptRoot=/home/site/wwwroot
+FROM microsoft/dotnet:2.2-sdk AS installer-env
 
-# Add files from this repo to the root site folder.
-COPY . /home/site/wwwroot 
+COPY . /src/dotnet-function-app
+RUN cd /src/dotnet-function-app && \
+    mkdir -p /home/site/wwwroot && \
+    dotnet publish *.csproj --output /home/site/wwwroot
 
+# To enable ssh & remote debugging on app service change the base image to the one below
+# FROM mcr.microsoft.com/azure-functions/dotnet:2.0-appservice 
+FROM mcr.microsoft.com/azure-functions/dotnet:2.0
+ENV AzureWebJobsScriptRoot=/home/site/wwwroot \
+    AzureFunctionsJobHost__Logging__Console__IsEnabled=true
 
+COPY --from=installer-env ["/home/site/wwwroot", "/home/site/wwwroot"]

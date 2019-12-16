@@ -1,8 +1,8 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ey8548;AccountKey=uy+jE2trjQWrMHufGQTZT3XU/yj47jzDlHXLtK3qRNSYXP+hOVdQXaejyG8Y4BRRCxtX0wG8KmHMJ6aS/5/w9A==;BlobEndpoint=https://ey8548.blob.core.windows.net/;TableEndpoint=https://ey8548.table.core.windows.net/;QueueEndpoint=https://ey8548.queue.core.windows.net/;FileEndpoint=https://ey8548.file.core.windows.net/",
-    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=ey8548;AccountKey=uy+jE2trjQWrMHufGQTZT3XU/yj47jzDlHXLtK3qRNSYXP+hOVdQXaejyG8Y4BRRCxtX0wG8KmHMJ6aS/5/w9A==;BlobEndpoint=https://ey8548.blob.core.windows.net/;TableEndpoint=https://ey8548.table.core.windows.net/;QueueEndpoint=https://ey8548.queue.core.windows.net/;FileEndpoint=https://ey8548.file.core.windows.net/",
-    "BlobStorageAccountConfiguration": "DefaultEndpointsProtocol=https;AccountName=serveless;AccountKey=h3ZNkmcVeiRjOHCGo2Dg5678g7CS342EfRa34lqZJOwtkMlEYMGAL7N52X5rMspzzk7ml5H3XUwAL+m9k6hQUw==;EndpointSuffix=core.windows.net"
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=storageaccountrgtmp8f1d;AccountKey=JTQH3s9PrpUV91Y9Af5vrcyxAOLoRt3lEj8Ioj69mmJ7hTnmXGIBp/avIlgGcLtszJvufvsW8xYK6PJ6M9C0tQ==;EndpointSuffix=core.windows.net",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=storageaccountrgtmp8f1d;AccountKey=JTQH3s9PrpUV91Y9Af5vrcyxAOLoRt3lEj8Ioj69mmJ7hTnmXGIBp/avIlgGcLtszJvufvsW8xYK6PJ6M9C0tQ==;EndpointSuffix=core.windows.net",
+    "BlobStorageAccountConfiguration": "DefaultEndpointsProtocol=https;AccountName=serverlessimages;AccountKey=1dFPGHc/MAQ9FO5sIpkIWEqnhcVCt3/grSx4EnJLEIqJ5VR4dWmXHY3uhe8tJ6yGHk1Nw8rzTM515YSqTlEifQ==;EndpointSuffix=core.windows.net"
   }
 }
