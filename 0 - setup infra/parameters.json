@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_serveless_portal_name": {
+            "value": null
+        },
+        "components_serveless_portal_name": {
+            "value": null
+        },
+        "storageAccounts_serverlessimages_name": {
+            "value": null
+        },
+        "serverfarms_ASP_rgpocazurefunctions_92c9_name": {
+            "value": null
+        },
+        "serverfarms_ASP_rgpocazurefunctions_bff9_name": {
+            "value": null
+        },
+        "accounts_serverlessanalytics_name": {
+            "value": null
+        },
+        "databaseAccounts_serverlessfunctions_name": {
+            "value": null
+        },
+        "storageAccounts_storageaccountrgpoc9cc1_name": {
+            "value": null
+        },
+        "storageAccounts_storageaccountrgpocb1a6_name": {
+            "value": null
+        },
+        "smartdetectoralertrules_failure_anomalies___fdshlf_name": {
+            "value": null
+        },
+        "smartdetectoralertrules_failure_anomalies___serveless_portal_name": {
+            "value": null
+        },
+        "components_fdshlf_externalid": {
+            "value": null
+        },
+        "actiongroups_application_insights_smart_detection_externalid": {
+            "value": null
+        },
+        "workspaces_defaultworkspace_7806cf8d_3992_4f6a_ab99_e493a143ad1b_wus2_externalid": {
+            "value": null
+        }
+    }
+}
