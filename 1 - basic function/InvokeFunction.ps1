@@ -1,9 +1,9 @@
 $params = @{
-    Uri = 'https://ey2.azurewebsites.net/api/HttpTrigger1'
+    Uri = 'https://serveless-portal.azurewebsites.net/api/BasicFuntion'
     ContentType = 'application/json'
     Method = 'post'
     Body = '{
-        "name": "John"
+        "name": "Vinny"
     }'
 }
 
