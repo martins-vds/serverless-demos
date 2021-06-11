@@ -1,9 +1,9 @@
 FROM microsoft/dotnet:2.2-sdk AS installer-env
 
-COPY . /src/dotnet-function-app
-RUN cd /src/dotnet-function-app && \
-    mkdir -p /home/site/wwwroot && \
-    dotnet publish *.csproj --output /home/site/wwwroot
+WORKDIR /src/dotnet-function-app
+COPY . .
+RUN mkdir -p /home/site/wwwroot
+RUN dotnet publish -c Release --output /home/site/wwwroot
 
 # To enable ssh & remote debugging on app service change the base image to the one below
 # FROM mcr.microsoft.com/azure-functions/dotnet:2.0-appservice 
