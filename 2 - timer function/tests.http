@@ -1,7 +1,7 @@
 ## Invoke time function
 
-POST https://serveless.azurewebsites.net/admin/functions/TimerTrigger1 HTTP/1.1
-x-functions-key: yaulwtjKjAaZlEa/RtDlESxg1o3HVNwXoTAnBfIYt/ZNuNhIWaqxfg==
+POST https://serveless-portal.azurewebsites.net/admin/functions/TimerFunction HTTP/1.1
+x-functions-key: AcJFtb2IZg3QN3mQyMwLB3NyXk0XYoytVDBUL5EueVbrWMhZBbJlBg==
 Content-Type: "application/json"
 
 {
