@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
+    "BlobStorageAccountConfiguration": "DefaultEndpointsProtocol=https;AccountName=serverlessimages;AccountKey=VDs1rDS05q9hcOzyhbHK/1pv5rEr+EGhydiw60hvuZbTokdWoSJ8LQpV0C0mdsnCF8WYua9Ftl5L6urL0xobbw==;EndpointSuffix=core.windows.net"
+  }
+}

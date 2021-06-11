@@ -16,7 +16,7 @@ namespace ReviewEvaluationFunctionApp
     {
         public override Task ProcessHttpRequestAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
-            request.Headers.Add("Ocp-Apim-Subscription-Key", "9cb54d36a67b4f6e9963284611c474d9");
+            request.Headers.Add("Ocp-Apim-Subscription-Key", "489865f7430649ad8214b29ffaf7bfa5");
             return base.ProcessHttpRequestAsync(request, cancellationToken);
         }
     }
